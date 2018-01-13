@@ -61,13 +61,13 @@ function shalat($keyword) {
 }
 #-------------------------[Function]-------------------------#
 
-# require_once('./src/function/search-1.php');
+# require_once('./src/function/search-
 # require_once('./src/function/download.php');
 # require_once('./src/function/random.php');
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
 
-//show menu, saat join dan command /menu
+//show menu, saat join dan cmmand /menu
 if ($type == 'join' || $command == '/menu') {
     $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
     $balas = array(
@@ -112,12 +112,4 @@ if($message['type']=='text') {
 						
 }
 if (isset($balas)) {
-    $result = json_encode($balas);
-//$result = ob_get_clean();
-
-    file_put_contents('./balasan.json', $result);
-
-
-    $client->replyMessage($balas);
-}
-?>
+    $r
